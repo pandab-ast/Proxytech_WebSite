@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('resources/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #eee;
+}
+.presentation_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 80px;
+
+}
+.Txt1{
+    margin: auto;
+    width: 50%;
+}
+.photoDesBoys{
+    margin: auto;
+    width: 50%;
+}

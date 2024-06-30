@@ -1,0 +1,175 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Accueil-ProxyTech</title>
+        <link rel="stylesheet" href="{% static  'style.css' %}">
+    </head>
+    <body>
+        {% include 'header.html' %}
+        <main>
+            <section class="main_section">
+                <div class="container_main">
+                    <div class="container_h1">
+                        <h1>Des experts à votre porte pour réparer et connecter votre numérique</h1>
+                    </div>
+                    <div class="container_h2">
+                        <h2>Nous réparons ordinateurs portables, pc, smartphones, tablettes et console de jeux
+                            . <br>
+                            Nous concevons et personalisons des pc sur mesure <br>
+                            nous somme aussi disponible pour des instalations et pour vos projet de digitalisation.
+                        </h2>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="nos_reparations">
+            <div class="container_title_rep">
+                <h1 class="titre_rep">Nos réparations</h1>
+                <div class="shape_title"></div>
+            </div>
+            <div class="container_article_rep reveal">
+                <article class="art_rep first_left">
+                    <img src="{% static 'resources/emoticone_phone.png' %}" alt="photo d'un smartphones" height="100em" width="100em">
+                    <h2>Smartphones</h2>
+                    <p>Nous intervenons sur tout type de marques et modèles sur devis.</p>
+                </article>
+                <article class="art_rep">
+                    <img src="{% static 'resources/emoticone_computer.png' %}" alt="photo d'un pc portable" height="100em" width="100em">
+                    <h2>Pc portables</h2>
+                    <p>Réparation et intervention sur tout problèmes materiels et logiciels sur vos portable.</p>
+                </article>
+                <article class="art_rep">
+                    <img src="{% static 'resources/emoticone_bureau.png' %}" alt="photo d'un pc de bureau" height="100em" width="100em">
+                    <h2>Ordinateurs de bureau</h2>
+                    <p>Nous réparons les problèmes materiels et logiciels sur vos ordinateurs et nous faisons aussi de la customisation.</p>
+                </article>
+                <article class="art_rep first_right">
+                    <img src="{% static 'resources/emoticone_controller.png' %}" alt="phton d'une mannette" height="100em" width="100em">
+                    <h2>console de jeu</h2>
+                    <p>Réparation et nettoyage sur tout type de console.</p>
+                </article>
+            </div>
+            <div class="boutton_en_savoir_plus">
+                <p>En savoir plus</p>
+            </div>
+        </section>
+        <section class="nos_services">
+            <div class="container_title_rep">
+                <h1 class="titre_rep_light">Nos autres services</h1>
+                <div class="shape_title"></div>
+            </div>
+            <div class="container_article_service reveal">
+                <article class="art_service first_left">
+                    <img src="{% static 'resources/network.png' %}" alt="photo du réseau" height="100em" width="100em">
+                    <h2>Instalation réseau</h2>
+                    <p>Nous installons tout type de réseau domestique ou de PME.</p>
+                </article>
+                <article class="art_service">
+                    <img src="{% static 'resources/clean.png' %}" alt="photo du réseau" height="100em" width="100em">
+                    <h2>Dépoussiérage et nettoyage d'appareil éléctronique</h2>
+                    <p>Éliminez les problèmes de surchauffe et faites durer vos appareils électroniques plus longtemps avec notre nettoyage proféssionnel.</p>
+                </article>
+                <article class="art_service">
+                    <img src="{% static 'resources/gamingPC.png' %}" alt="photo du réseau" height="100em" width="100em">
+                    <h2>PC sur mesure</h2>
+                    <p>Nous réalisons vos rêves en conceptionnant sur mesure vos tour, que se soit pour le gaming ou le proféssionnel.</p>
+                </article>
+                <article class="art_service first_right">
+                    <img src="{% static 'resources/windows.png' %}" alt="photo du réseau" height="100em" width="100em">
+                    <h2>Logiciel et données</h2>
+                    <p>Nous installons configurons les logiciels et Windows, Mais nous récupérons aussi vos données sur tout type d'appareil.</p>
+                </article>
+            </div>
+            <div class="boutton_en_savoir_plus_light">
+                <p>En savoir plus</p>
+            </div>
+        </section>
+        <section class="Procedure">
+            <div class="container_title_rep">
+                <h1 class="titre_rep">Comment procéder ?</h1>
+                <div class="shape_title"></div>
+            </div>
+            <div class="container_article_process reveal">
+                <div class="caseArticle_devis">
+                    <div class="pro_titre">
+                        <h2>Le devis</h2>
+                    </div>
+                    <p>Nous vous proposons un devis adapté à vos besoins, dés le devis validé, nous procedons à la réparation.</p>
+                </div>
+                <div class="caseArticle_dep">
+                        <div class="pro_titre">
+                            <H2>Déplacement</H2>
+                        </div>
+                        <p>Ne bouger pas le petit doigt ! Nous nous déplacons chez vous pour la réparation.</p>
+                </div>
+                <div class="caseArticle_inter">contact_infotitre_rep
+                        <div class="pro_titre">
+                            <h2>Intervention</h2>
+                        </div>
+                        <p>Nous intervenons à domicile  ou dans notre atelier.</p>
+                </div>
+                <div class="caseArticle_fin">
+                        <div class="pro_titre">
+                            <h2>Tout est bien qui fini bien !</h2>
+                        </div>
+                        <p>Nous avons un services après vente et une garentie pour tout nos interventions.</p>
+                </div>
+            </div>
+            <div class="boutton_en_savoir_plus">
+                <p>En savoir plus</p>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container_title_rep reveal">
+                <h1 class="titre_rep">Vous êtes interessé par nos service ?</h1>
+                <div class="shape_title"></div>
+            </div>
+            <div class="grid_contact_map">
+                <div class="contact_text">
+                    <h2 class="contact_info"> <img src="{% static 'resources/van_icon.png' %}" width="30" height="30">  Intervention gratuite sur un rayon de 10 km de Braine-Le-Comte</h2>
+                    <h2 class="contact_info"> <img src="{% static 'resources/clock_icon.png' %}" width="30" height="30">  Horaire d'intervention : Lundi-Samedi 16-21h</h2>
+                    <h2 class="contact_info"> <img src="{% static 'resources/phone_icon.png' %}" width="30" height="30"> Appelez-nous au <a href="tel:+32474312579">0474/31.25.79</a></h2>
+                    <h2 class="contact_info"> <img src="{% static 'resources/mail_icon.png' %}" width="30" height="30">  Contactez-nous sur <a href="mailto:proxytech.be@gmail.com?subject=Renseignement">proxytech.be@gmail.com</a></h2> 
+                </div>
+                <div class="patern_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81009.63712905788!2d4.057702631224662!3d50.616877264641914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3b2d66c747c85%3A0xd25f42320ddba71b!2s7090%20Braine-le-Comte!5e0!3m2!1sfr!2sbe!4v1710880286922!5m2!1sfr!2sbe" width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> //Faire une format dinamique pour les téléphone poure retrécire le site.
+            </div>
+        </section>
+        {% include 'footer.html' %}
+    </body>
+    <script type="text/javascript">
+
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal')
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+
+                if(revealTop < windowHeight - revealPoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+    </script>
+</html> 
+
+<!--
+    const toggleButton = document.getElementById('toggleButton');
+        const navilist = document.getElementById('navi-list');
+
+        toggleButton.addEventListener('click', () => {
+            navilist.classList.toggle('active');
+        })
+-->

@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+        background-color: gray;
+        color: black;
+        display: flex;
+        justify-content: space-around;
+}
+.nav-list{
+    list-style-type: none;
+}
+.nav-list .list-item {
+    display: inline-block;
+}

@@ -1,0 +1,363 @@
+/*ajout de la police d'écriture*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('resources/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #eee;
+}
+/*-------------------------------------------------------------------*/
+/*-----------------------configuration css du header---------------------------*/
+.main_section {
+    /* background-image: url('../resources/main_background_3.png'); */
+    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.1)), url('resources/main_background_2.png'); 
+    background-size: cover;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    height: 42em;
+}
+main .container_h1{
+    color: #eee;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+
+}
+main .container_h2{
+    color: #eee;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 3em;
+}
+.container_main {
+    width: 50em;
+    height: auto;
+}
+
+/*------------------configuration de la secton nos réparations-----------------*/
+.nos_reparations{
+    height: 55em;
+}
+.container_article_rep{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.titre_rep{
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+.titre_rep_light{
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: white;
+}
+.shape_title{
+    background-color: #20fdea;
+    height: 0.5em;
+    width: 10em;
+    border-radius: 1em;
+    margin: auto;
+    margin-bottom: 5em;
+}
+
+.art_rep{
+    width: 20em;
+    height: auto;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 2em;
+    padding: 2em;
+    background-color: white;
+    text-align: center;
+    border-radius: 2em;
+}
+
+
+.art_rep h2{
+    padding: 0.5em;
+}
+.art_rep p{
+    line-height: 1.7em;
+}
+
+
+.link{
+    color: #000000;
+}
+
+/*------------------configuration de la secton nos services-----------------*/
+.nos_services{
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.6)), url('resources/nettoyage_pcb.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 1em;
+    height: auto;
+}
+.art_service{
+    width: 20em;
+    height: auto;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 2em;
+    padding: 2em;
+    display: block;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    border-radius: 2em;
+}
+
+.art_service h2{
+    padding: 0.5em;
+}
+.art_service p{
+    line-height: 1.7em;
+}
+
+.boutton_en_savoir_plus{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border-radius: 2em;
+    background-color: black;
+    width: 10em;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+    margin-bottom: 1em;
+    transition: all 0.5s ease;
+}
+.boutton_en_savoir_plus_light{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border-radius: 2em;
+    background-color: white;
+    width: 10em;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+    margin-bottom: 1em;
+    transition: all 0.5s ease;
+}
+.boutton_en_savoir_plus:hover{
+    color: #24262b;
+    background-color: #95fbf2;
+}
+.boutton_en_savoir_plus_light:hover{
+    color: #95fbf2;
+    background-color: #24262b;
+}
+/*------------------configuration de la secton nos services-----------------*/
+
+
+
+
+.container_article_service{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*--------------configuration de la section de Comment procéder---------------*/
+.Procedure{
+    height: 55em;
+}
+.container_article_process{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+}
+
+.caseArticle_devis {
+    width: 20em;
+    height: 20em;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.6)), url('resources/devis_sign.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 2em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5px 10px #e6e6e6;
+    transition: 0.3s ease-in-out;
+    background-color: #eee;
+    text-align: center;
+    border-radius: 2em;
+
+    color: white;
+}
+
+
+.caseArticle_dep{
+    width: 20em;
+    height: 20em;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.6)), url('resources/camionnette.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 2em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5px 10px #e6e6e6;
+    transition: 0.3s ease-in-out;
+    background-color: #eee;
+    text-align: center;
+    border-radius: 2em;
+
+    color: white;
+}
+
+.caseArticle_inter{
+    width: 20em;
+    height: 20em;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.6)), url('resources/mobile-repear.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 2em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5px 10px #e6e6e6;
+    transition: 0.3s ease-in-out;
+    background-color: #eee;
+    text-align: center;
+    border-radius: 2em;
+
+    color: white;
+}
+
+.caseArticle_fin{
+    width: 20em;
+    height: 20em;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.6)), url('resources/animeMaterialoffice.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 2em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5px 10px #e6e6e6;
+    transition: 0.3s ease-in-out;
+    background-color: #eee;
+    text-align: center;
+    border-radius: 2em;
+
+    color: white;
+}
+
+.pro_titre{
+    margin: 40px;
+}
+/*--------------------------------CONTACT-----------------------------------------------*/
+.contact_text{
+    width: 100%;
+    display: block;
+}
+.contact_info{
+    margin: 3em;
+    margin-right: 1em;
+    margin-left: 50%;
+    width: auto;
+    align-items: center;
+}
+.grid_contact_map{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 80px;   
+    background-color: #f6f6f6;
+}
+.patern_map{
+    margin: 3em;
+    margin-left: 1em;
+    margin-right: auto;
+    width: auto;
+    align-items: center;
+}
+.iframe{
+    width: auto;
+    height: auto;
+}
+
+/*ajuste media pour tout les section d'information */
+@media (max-width: 1630px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .main_section{
+        background-position: right;
+    }
+    .container_main{
+        width: auto;
+        text-align: center;
+    }
+    .nos_reparations{
+        height: auto;
+        width: auto;  
+    } 
+    .nos_services{
+        height: auto;
+    }
+    .Procedure{
+        height: auto;
+    }
+}
+
+
+/*Pour animation dynamique sur opacité*/
+.reveal{
+    z-index: 100;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* 
+<p>
+                <a class="link" href="https://www.instagram.com/">
+                    <img src="resources/Instagram_logo_2016.svg.webp" alt="Direction vers istagram" title="CLiquez pour aller sur instagram">
+                </a><br> <!--la balise a permet de faire des liens hypertext existant-->
+                <a class="link" href="about/aboutUs.html">
+                    <img src="resources/apropos_icon.png" alt="presentation de Proxytech" title="cliquez pour apprendre un peu plus sur nous">
+                </a>
+            </p> */

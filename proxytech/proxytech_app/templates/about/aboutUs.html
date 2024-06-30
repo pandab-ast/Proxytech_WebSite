@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>À propos de ProxyTech</title> <!--Pour afficher un titre sur l'onglet du navigateur-->
+        <link rel="stylesheet" href="{% static  'styleAboutUs.css' %}">
+    </head>
+    <body>
+        {% include 'header.html' %}
+        <div class="presentation_grid">
+            <div class="Txt1">
+                <h1 class="subTitle">À propos de Proxytech</h1> <!--Balise titre sert a metre le niveau de titre H1 à H6-->
+                <h3>Nous sommes un duo de passionnés d'informatique et d'électronique. Ayant fait des études en informatique et bricolant durant nos heures perdues sur des ordinateurs et des portables, nous nous sommes lancés dans l'entrepreneuriat et avons créé Proxytech.
+
+                    Chez Proxytech, nous sommes un duo, dédié à offrir des services de qualité en informatique. Forts dans notre expertise technologique.
+                    
+                    Nous vivons à une époque où il est crucial de lutter contre la surconsommation et de promouvoir une économie circulaire. Chez Proxytech, nous répondons à cette nécessité en prolongeant la durée de vie de vos appareils. Nos valeurs fondamentales sont la rapidité, la qualité et la convivialité.
+                    
+                    Nous offrons une gamme complète de services :
+                    - **Réparation de tours et portables**
+                    - **Nettoyage et optimisation des appareils**
+                    - **Migration et récupération de données**
+                    - **Réparation de smartphones**
+                    
+                    Ne laissez pas vos appareils avec une valeur marchande considérable prendre la poussière dans un placard. Confiez-les-nous, et nous en prendrons soin comme s'il s'agissait des nôtres.
+                    
+                    Nous espérons pouvoir vous aider dans votre quotidien numérique et améliorer votre expérience technologique.
+                
+                    Ludovic & Nathan</h3>
+            </div>
+            <div class="photoDesBoys"> 
+                <img src="{% static 'resources/mail_icon.png' %}">
+            </div>
+        </div>
+        <!-- Ma ligne de commentaire-->
+        {% include 'footer.html' %}
+    </body>
+</html>
