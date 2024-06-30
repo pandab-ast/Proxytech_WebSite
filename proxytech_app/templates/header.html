@@ -1,42 +1,46 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="fr">
+<head>
+    <html lang="fr">
+    <title>ProxyTech.be</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="{% static  'styleHeader.css' %}">
-    <div class="container_nav">
-        <nav class="navbar">
-            <div class="container_icon">
-                <a href="/home"><img src="{% static 'resources/proxytech_logo_couleur.png' %}" alt="Logo de l'entreprise" class="logo"></a>    
-            </div>
-            <ul class="nav-list" id="navi-list">
-                <li class="list-item">
-                    <a href="/aboutUs">À propos de nous</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">Réparation</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">Installation</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">Mention légal</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-            <div class="menu_icon" id="toggleButton">
-                <div class="menu_icon_line"></div>
-                <div class="menu_icon_line"></div>
-                <div class="menu_icon_line"></div>
-            </div>
-        </nav>
-    </div>
-    <script>
-        const toggleButton = document.getElementById('toggleButton');
-        const navilist = document.getElementById('navi-list');
+</head>
+<div class="container_nav">
+    <nav class="navbar">
+        <div class="container_icon">
+            <a href="/home"><img src="{% static 'resources/proxytech_logo_couleur.png' %}" alt="Logo de l'entreprise"
+                                 class="logo"></a>
+        </div>
+        <ul class="nav-list" id="navi-list">
+            <li class="list-item">
+                <a href="/aboutUs">À propos de nous</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Réparation</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Installation</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Mention légal</a>
+            </li>
+            <li class="list-item">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <div class="menu_icon" id="toggleButton">
+            <div class="menu_icon_line"></div>
+            <div class="menu_icon_line"></div>
+            <div class="menu_icon_line"></div>
+        </div>
+    </nav>
+</div>
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const navilist = document.getElementById('navi-list');
 
-        toggleButton.addEventListener('click', () => {
-            navilist.classList.toggle('active_head');
-        })
-    </script>
+    toggleButton.addEventListener('click', () => {
+        navilist.classList.toggle('active_head');
+    })
+</script>
 </html>
