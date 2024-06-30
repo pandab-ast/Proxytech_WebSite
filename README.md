@@ -1,7 +1,7 @@
 # Proxytech WebSite
 Proxytech Web site for business
 
-## Table of Contents
+# Table of Contents
 
 - [Requierements](Requierements)
 - [Installation](Installation)
@@ -21,7 +21,7 @@ You can use the script 'ScriptRunSite.ps1' to install al the requierements
 - tzdata==2024.1
 - urllib3==2.2.1
 
-## Installation and usage
+## Installation
 
 Here are the instructions to install all the requierements
 
