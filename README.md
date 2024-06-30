@@ -1,6 +1,8 @@
 # Proxytech_WebSite
 Proxytech Web site for business
 
+Requierements :
+
 
 asgiref==3.8.1
 
