@@ -3,9 +3,9 @@ Proxytech Web site for business
 
 # Table of Contents
 
-- [Requierements](Requierements)
-- [Installation](Installation)
-- [Authors](Authors)
+- [Requierements](#Requierements)
+- [Installation](#Installation)
+- [Authors](#Authors)
 
 
 ## Requierements
@@ -25,13 +25,13 @@ You can use the script 'ScriptRunSite.ps1' to install al the requierements
 
 Here are the instructions to install all the requierements
 
-- Install Python 3.11.x from Microsoft Store
-- Open the 'ScriptRunSite.ps1' file with Powershell (executed as administrator)
-- If you got an error, run that command :
+1. Install Python 3.11.x from the Microsoft Store.
+2. Open the `ScriptRunSite.ps1` file with PowerShell (run as administrator).
+3. If you encounter an error, run the following command:
 ```bash
 Set-ExecutionPolicy Unrestricted -Scope Process
 ```
-- Execute manage.py with python like this :
+4. Execute manage.py with python like this :
 ```python
 python manage.py runserver
 ```
