@@ -1,19 +1,15 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('resources/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
-}
-
-/*---------IMpémentation pour la barre menu de navigation ave le logo -------------------*/
-.container_nav{
+/*---------Implémentation pour la barre menu de navigation avec le logo -------------------*/
+.container_nav {
     position: sticky;
     z-index: 10;
     top: 0;
-    
+
 }
-.navbar{
-    background-color: white;
-    height: 7em;
-    color: black;
+
+.navbar {
+    background-color: rgb(52, 51, 52, 0.7); /* Fond gris avec opacité */
+    height: 5em;
+    color: #cacaca;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -22,37 +18,45 @@
 
 
 }
+
 .logo {
-    height: 8em;
+    height: 5em;
 }
-.nav-list{
+
+.nav-list {
     list-style-type: none;
 }
+
 .nav-list .list-item {
     display: inline-block;
     padding: 2em 1em;
     transition: all 0.3s ease;
 }
-.navbar a{
-    color: black;
+
+.navbar a {
+    color: #cacaca;
     text-decoration: none;
     margin-bottom: 20px;
     transition: all 0.3s ease;
 }
-.navbar a:hover{
-    color: #808080;
+
+.navbar a:hover {
+    color: #fdfdfd;
+    text-shadow: 0 0 20px rgb(32, 251, 232, 1.0); /* Brilliance turquoise */
 }
-.menu_icon{
+
+.menu_icon {
 
     display: none;
 }
-.menu_icon_line{
+
+.menu_icon_line {
     width: 1.3em;
     height: 3px;
     background-color: #20fdea;
     margin-bottom: 0.25em;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px,
+    rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
 
 /* menu de navigation en retrécicement sur les 3 barres*/
@@ -60,17 +64,20 @@
     .navbar {
         flex-direction: column;
         position: relative;
-        height: auto; 
+        height: auto;
     }
+
     .navbar .container_icon {
         width: 100%;
     }
+
     .menu_icon {
         display: block;
         position: absolute;
         right: 3em;
         top: 3em;
     }
+
     .nav-list {
         list-style-type: none;
         width: 100%;
@@ -78,14 +85,17 @@
         padding-top: 10px;
         display: none;
     }
+
     .nav-list .list-item {
         display: block;
         border-top: 1px solid black;
     }
+
     .logo {
         margin-top: 1em;
         margin-left: 1em;
     }
+
     .active_head {
         display: block;
     }

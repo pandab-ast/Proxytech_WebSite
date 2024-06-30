@@ -1,14 +1,11 @@
 {% load static %}
-<head>
-    <html lang="fr">
-    <title>ProxyTech.be</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="{% static  'styleHeader.css' %}">
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="{% static  'styleHeader.css' %}">
 <div class="container_nav">
     <nav class="navbar">
         <div class="container_icon">
-            <a href="/home"><img src="{% static 'resources/proxytech_logo_couleur.png' %}" alt="Logo de l'entreprise"
+            <a href="/home"><img src="{% static 'resources/proxytech_logo_couleur_nav.png' %}"
+                                 alt="Logo de l'entreprise"
                                  class="logo"></a>
         </div>
         <ul class="nav-list" id="navi-list">
@@ -43,4 +40,3 @@
         navilist.classList.toggle('active_head');
     })
 </script>
-</html>
