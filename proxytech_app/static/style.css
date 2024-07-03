@@ -1,28 +1,13 @@
-/*ajout de la police d'écriture*/
-@font-face {
-    font-family: 'Raleway';
-    src: url('resources/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #eee;
 }
 
-/*-------------------------------------------------------------------*/
 /*-----------------------configuration css du header---------------------------*/
 .main_section {
-    /* background-image: url('../resources/main_background_3.png'); */
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('resources/main_background_2.png');
     background-size: cover;
-    background-attachment: local;
-    background-repeat: no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('resources/main_background_2.png') no-repeat local top;
+    width: auto;
     height: 42em;
 }
 
@@ -31,10 +16,7 @@ main .container_h1 {
     font-size: 1.5em;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 2em;
-    padding-bottom: 3em;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding: 2em 3em 3em;
 
 }
 
@@ -51,7 +33,7 @@ main .container_h2 {
     height: auto;
 }
 
-/*------------------configuration de la secton nos réparations-----------------*/
+/*------------------configuration de la section nos réparations-----------------*/
 .nos_reparations {
     height: 55em;
 }
@@ -82,8 +64,7 @@ main .container_h2 {
     height: 0.5em;
     width: 10em;
     border-radius: 1em;
-    margin: auto;
-    margin-bottom: 5em;
+    margin: auto auto 5em;
 }
 
 .art_rep {
@@ -112,12 +93,10 @@ main .container_h2 {
     color: #000000;
 }
 
-/*------------------configuration de la secton nos services-----------------*/
+/*------------------configuration de la section nos services-----------------*/
 .nos_services {
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url('resources/nettoyage_pcb.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url('resources/nettoyage_pcb.jpg') no-repeat bottom;
     padding: 1em;
     height: auto;
 }
@@ -186,7 +165,7 @@ main .container_h2 {
     background-color: #24262b;
 }
 
-/*------------------configuration de la secton nos services-----------------*/
+/*------------------configuration de la section nos services-----------------*/
 
 
 .container_article_service {
@@ -194,7 +173,6 @@ main .container_h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 /*--------------configuration de la section de Comment procéder---------------*/
@@ -214,21 +192,18 @@ main .container_h2 {
 .caseArticle_devis {
     width: 20em;
     height: 20em;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url('resources/devis_sign.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url('resources/devis_sign.png') no-repeat;
     margin-left: 0.5em;
     margin-right: 0.5em;
     margin-bottom: 2em;
     padding: 2em;
     display: flex;
     flex-direction: column;
-    box-shadow: 0.5px 10px #e6e6e6;
+    box-shadow: 1px 10px #e6e6e6;
     transition: 0.3s ease-in-out;
     background-color: #eee;
     text-align: center;
     border-radius: 2em;
-
     color: white;
 }
 
@@ -245,7 +220,7 @@ main .container_h2 {
     padding: 2em;
     display: flex;
     flex-direction: column;
-    box-shadow: 0.5px 10px #e6e6e6;
+    box-shadow: 1px 10px #e6e6e6;
     transition: 0.3s ease-in-out;
     background-color: #eee;
     text-align: center;
@@ -266,9 +241,8 @@ main .container_h2 {
     padding: 2em;
     display: flex;
     flex-direction: column;
-    box-shadow: 0.5px 10px #e6e6e6;
+    box-shadow: 1px 10px #e6e6e6;
     transition: 0.3s ease-in-out;
-    background-color: #eee;
     text-align: center;
     border-radius: 2em;
 
@@ -287,7 +261,7 @@ main .container_h2 {
     padding: 2em;
     display: flex;
     flex-direction: column;
-    box-shadow: 0.5px 10px #e6e6e6;
+    box-shadow: 1px 10px #e6e6e6;
     transition: 0.3s ease-in-out;
     background-color: #eee;
     text-align: center;
@@ -307,9 +281,7 @@ main .container_h2 {
 }
 
 .contact_info {
-    margin: 3em;
-    margin-right: 1em;
-    margin-left: 50%;
+    margin: 3em 1em 3em 50%;
     width: auto;
     align-items: center;
 }
@@ -323,9 +295,7 @@ main .container_h2 {
 }
 
 .patern_map {
-    margin: 3em;
-    margin-left: 1em;
-    margin-right: auto;
+    margin: 3em auto 3em 1em;
     width: auto;
     align-items: center;
 }
@@ -338,8 +308,8 @@ main .container_h2 {
 /*ajuste media pour tout les section d'information */
 @media (max-width: 1630px) {
     body {
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
     }
 
     .main_section {
