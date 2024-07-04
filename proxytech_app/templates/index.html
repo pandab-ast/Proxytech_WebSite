@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Accueil-ProxyTech</title>
     <link href="{% static  'style.css' %}" rel="stylesheet">
+    <link href="{% static  'dynamique.css' %}" rel="stylesheet">
 </head>
 <body>
 {% include 'header.html' %}
@@ -158,40 +159,9 @@
                     style="border:0;"
                     width="700"></iframe>
         </div>
-        //Faire une format dynamique pour les téléphone pour retrécire le site.
     </div>
 </section>
 {% include 'footer.html' %}
+<script type="text/javascript" src="{% static 'js/scrollReveal.js' %}"></script>
 </body>
-<script type="text/javascript">
-
-    window.addEventListener('scroll', reveal);
-
-    function reveal() {
-        var reveals = document.querySelectorAll('.reveal')
-
-        for (var i = 0; i < reveals.length; i++) {
-
-            var windowHeight = window.innerHeight;
-            var revealTop = reveals[i].getBoundingClientRect().top;
-            var revealPoint = 150;
-
-            if (revealTop < windowHeight - revealPoint) {
-                reveals[i].classList.add('active');
-            } else {
-                reveals[i].classList.remove('active');
-            }
-        }
-    }
-
-</script>
 </html>
-
-<!--
-    const toggleButton = document.getElementById('toggleButton');
-        const navilist = document.getElementById('navi-list');
-
-        toggleButton.addEventListener('click', () => {
-            navilist.classList.toggle('active');
-        })
--->
