@@ -1,39 +1,56 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>À propos de ProxyTech</title> <!--Pour afficher un titre sur l'onglet du navigateur-->
-        <link rel="stylesheet" href="{% static  'styleAboutUs.css' %}">
-    </head>
-    <body>
-        {% include 'header.html' %}
-        <div class="presentation_grid">
-            <div class="Txt1">
-                <h1 class="subTitle">À propos de Proxytech</h1> <!--Balise titre sert a metre le niveau de titre H1 à H6-->
-                <h3>Nous sommes un duo de passionnés d'informatique et d'électronique. Ayant fait des études en informatique et bricolant durant nos heures perdues sur des ordinateurs et des portables, nous nous sommes lancés dans l'entrepreneuriat et avons créé Proxytech.
+<head>
+    <meta charset="utf-8">
+    <title>À propos de ProxyTech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static  'styleAboutUs.css' %}">
+</head>
+<body>
+{% include 'header.html' %}
+<header class="main_section">
+    <div class="container_h1">
+        <h1>À propos de Proxytech</h1>
+    </div>
+</header>
 
-                    Chez Proxytech, nous sommes un duo, dédié à offrir des services de qualité en informatique. Forts dans notre expertise technologique.
-                    
-                    Nous vivons à une époque où il est crucial de lutter contre la surconsommation et de promouvoir une économie circulaire. Chez Proxytech, nous répondons à cette nécessité en prolongeant la durée de vie de vos appareils. Nos valeurs fondamentales sont la rapidité, la qualité et la convivialité.
-                    
-                    Nous offrons une gamme complète de services :
-                    - **Réparation de tours et portables**
-                    - **Nettoyage et optimisation des appareils**
-                    - **Migration et récupération de données**
-                    - **Réparation de smartphones**
-                    
-                    Ne laissez pas vos appareils avec une valeur marchande considérable prendre la poussière dans un placard. Confiez-les-nous, et nous en prendrons soin comme s'il s'agissait des nôtres.
-                    
-                    Nous espérons pouvoir vous aider dans votre quotidien numérique et améliorer votre expérience technologique.
-                
-                    Ludovic & Nathan</h3>
+<main>
+    <section class="about_us">
+        <div class="container_about">
+            <div class="about_text">
+                <h2>Notre Histoire</h2>
+                <p>Bienvenue chez Proxytech! Nous sommes Ludovic et Nathan, deux passionnés d'informatique et
+                    d'électronique. Nos chemins se sont croisés lors de nos études en informatique, et depuis, nous
+                    n'avons cessé de bricoler et de perfectionner nos compétences. De cette passion commune est née
+                    l'idée de Proxytech.</p>
+                <h2>Notre Mission</h2>
+                <p>Chez Proxytech, nous croyons en une technologie durable. À une époque où la surconsommation est
+                    monnaie courante, nous nous engageons à prolonger la durée de vie de vos appareils. Notre objectif
+                    est de promouvoir une économie circulaire tout en offrant des services rapides, de qualité et
+                    conviviaux.</p>
+                <h2>Nos Services</h2>
+                <ul>
+                    <li><strong>Réparation de tours et portables</strong></li>
+                    <li><strong>Nettoyage et optimisation des appareils</strong></li>
+                    <li><strong>Migration et récupération de données</strong></li>
+                    <li><strong>Réparation de smartphones</strong></li>
+                </ul>
+                <p>Ne laissez pas vos appareils prendre la poussière. Confiez-les-nous, et nous en prendrons soin comme
+                    s'il s'agissait des nôtres. Nous sommes là pour vous aider à améliorer votre expérience
+                    technologique au quotidien.</p>
+                <p class="signature">Ludovic & Nathan</p>
             </div>
-            <div class="photoDesBoys"> 
-                <img src="{% static 'resources/mail_icon.png' %}">
+            <div class="about_photo">
+                <img src="https://img-9gag-fun.9cache.com/photo/amPM0VV_460s.jpg" alt="Ludovic et Nathan">
+                <div class="cv_links">
+                    <a href="#" target="_blank">Site web de Ludovic</a>
+                    <a href="#" target="_blank">Site web de Nathan</a>
+                </div>
             </div>
         </div>
-        <!-- Ma ligne de commentaire-->
-        {% include 'footer.html' %}
-    </body>
+    </section>
+</main>
+{% include 'footer.html' %}
+</body>
 </html>
