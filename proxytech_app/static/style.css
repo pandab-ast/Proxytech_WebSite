@@ -270,15 +270,16 @@ main .container_h2 {
 }
 
 /*--------------------------------CONTACT-----------------------------------------------*/
-.contact_text {
+.contact {
     width: 100%;
     display: block;
-}
 
-.contact_info {
-    margin: 3em 1em 3em 50%;
-    width: auto;
-    align-items: center;
+    .info {
+        margin: 3em 1em 3em 50%;
+        width: auto;
+        align-items: center;
+        font-style: normal;
+    }
 }
 
 .grid_contact_map {

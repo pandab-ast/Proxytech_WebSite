@@ -3,9 +3,13 @@
 <html lang="FR">
 <head>
     <meta charset="utf-8">
-    <title>Accueil-ProxyTech</title>
+    <title>ProxyTech</title>
     <link href="{% static  'style.css' %}" rel="stylesheet">
     <link href="{% static  'dynamique.css' %}" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static  'resources/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static  'resources/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static  'resources/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static  'favicon/site.webmanifest' %}">
 </head>
 <body>
 {% include 'header.html' %}
@@ -25,10 +29,8 @@
     </section>
 </main>
 <section class="nos_reparations">
-    <div class="container_title_rep">
-        <h1 class="titre_rep">Nos réparations</h1>
-        <div class="shape_title"></div>
-    </div>
+    <h1 class="titre_rep">Nos réparations</h1>
+    <div class="shape_title"></div>
     <div class="container_article_rep reveal">
         <article class="art_rep first_left">
             <img alt="photo d'un smartphones" height="100em" src="{% static 'resources/emoticone_phone.png' %}"
@@ -61,10 +63,8 @@
     </div>
 </section>
 <section class="nos_services">
-    <div class="container_title_rep">
-        <h1 class="titre_rep_light">Nos autres services</h1>
-        <div class="shape_title"></div>
-    </div>
+    <h1 class="titre_rep_light">Nos autres services</h1>
+    <div class="shape_title"></div>
     <div class="container_article_service reveal">
         <article class="art_service first_left">
             <img alt="photo du réseau" height="100em" src="{% static 'resources/network.png' %}" width="100em">
@@ -95,10 +95,8 @@
     </div>
 </section>
 <section class="Procedure">
-    <div class="container_title_rep">
-        <h1 class="titre_rep">Comment procéder ?</h1>
-        <div class="shape_title"></div>
-    </div>
+    <h1 class="titre_rep">Comment procéder ?</h1>
+    <div class="shape_title"></div>
     <div class="container_article_process reveal">
         <div class="caseArticle_devis">
             <div class="pro_titre">
@@ -113,7 +111,7 @@
             </div>
             <p>Ne bouger pas le petit doigt ! Nous nous déplacons chez vous pour la réparation.</p>
         </div>
-        <div class="caseArticle_inter">contact_infotitre_rep
+        <div class="caseArticle_inter">
             <div class="pro_titre">
                 <h2>Intervention</h2>
             </div>
@@ -131,26 +129,26 @@
     </div>
 </section>
 <section class="contact">
-    <div class="container_title_rep reveal">
+    <div class="reveal">
         <h1 class="titre_rep">Vous êtes interessé par nos service ?</h1>
         <div class="shape_title"></div>
     </div>
     <div class="grid_contact_map">
-        <div class="contact_text">
-            <h2 class="contact_info"><img alt="van_icon" height="30" src="{% static 'resources/van_icon.png' %}"
-                                          width="30">
+        <address class="contact">
+            <h2 class="info"><img alt="van_icon" height="30" src="{% static 'resources/van_icon.png' %}"
+                                  width="30">
                 Intervention gratuite sur un rayon de 10 km de Braine-Le-Comte</h2>
-            <h2 class="contact_info"><img alt="clock_icon" height="30" src="{% static 'resources/clock_icon.png' %}"
-                                          width="30"> Horaire
+            <h2 class="info"><img alt="clock_icon" height="30" src="{% static 'resources/clock_icon.png' %}"
+                                  width="30"> Horaire
                 d'intervention : Lundi-Samedi 16-21h</h2>
-            <h2 class="contact_info"><img alt="phone_icon" height="30" src="{% static 'resources/phone_icon.png' %}"
-                                          width="30">
+            <h2 class="info"><img alt="phone_icon" height="30" src="{% static 'resources/phone_icon.png' %}"
+                                  width="30">
                 Appelez-nous au <a href="tel:+32474312579">0474/31.25.79</a></h2>
-            <h2 class="contact_info"><img alt="mail_icon" height="30" src="{% static 'resources/mail_icon.png' %}"
-                                          width="30">
+            <h2 class="info"><img alt="mail_icon" height="30" src="{% static 'resources/mail_icon.png' %}"
+                                  width="30">
                 Contactez-nous sur <a
                         href="mailto:proxytech.be@gmail.com?subject=Renseignement">proxytech.be@gmail.com</a></h2>
-        </div>
+        </address>
         <div class="patern_map">
             <iframe allowfullscreen=""
                     height="600" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81009.63712905788!2d4.
