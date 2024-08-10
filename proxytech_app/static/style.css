@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #eee;
+    background-color: #dce0e4;
 }
 
 /*-----------------------configuration css du header---------------------------*/
@@ -9,28 +9,51 @@ body {
     background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('resources/main_background_2.png') no-repeat local top;
     width: auto;
     height: 42em;
+
 }
 
-main .container_h1 {
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 47px;
+}
+
+h4 {
+    font-size: 33px;
+}
+
+h5 {
+    font-size: 27px;
+}
+
+h6 {
+    font-size: 23px;
+}
+
+p {
+    font-size: 19px;
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main h1 {
     color: #eee;
-    font-size: 1.5em;
     text-align: center;
     text-transform: uppercase;
-    padding: 2em 3em 3em;
-
+    padding: 5% 10% 3%;
 }
 
-main .container_h2 {
+main h4 {
     color: #eee;
     text-align: center;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 3em;
-}
-
-.container_main {
-    width: 50em;
-    height: auto;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-left: 10%;
 }
 
 /*------------------configuration de la section nos réparations-----------------*/
@@ -45,26 +68,25 @@ main .container_h2 {
 }
 
 .titre_rep {
-    font-size: 3.5em;
     text-align: center;
     padding-top: 2em;
     padding-bottom: 1em;
 }
 
 .titre_rep_light {
-    font-size: 3.5em;
     text-align: center;
     padding-top: 2em;
     padding-bottom: 1em;
     color: white;
 }
 
-.shape_title {
-    background-color: #20fdea;
+hr {
+    background-color: #5abebd;
     height: 0.5em;
-    width: 10em;
+    width: 12em;
     border-radius: 1em;
     margin: auto auto 5em;
+    border-style: none;
 }
 
 .art_rep {
@@ -118,46 +140,35 @@ main .container_h2 {
     line-height: 1.7em;
 }
 
-.boutton_en_savoir_plus {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
-    border-radius: 2em;
-    background-color: black;
-    width: 10em;
-    height: auto;
-    text-align: center;
-    font-weight: bold;
-    font-size: larger;
-    color: white;
-    margin-bottom: 1em;
-    transition: all 0.5s ease;
+section a {
+    text-decoration: none;
+    button {
+        transition: all 0.5s ease;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
+        border-radius: 2em;
+        background-color: black;
+        width: 10em;
+        height: auto;
+        margin-bottom: 1em;
+        text-decoration: none;
+        font-weight: bold;
+        text-wrap: nowrap;
+        color: white;
+        border-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+        cursor: pointer;
+    }
 }
 
-.boutton_en_savoir_plus_light {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
-    border-radius: 2em;
-    background-color: white;
-    width: 10em;
-    height: auto;
-    text-align: center;
-    font-weight: bold;
-    font-size: larger;
+button:hover {
     color: black;
-    margin-bottom: 1em;
-    transition: all 0.5s ease;
-}
-
-.boutton_en_savoir_plus:hover {
-    color: #24262b;
-    background-color: #95fbf2;
-}
-
-.boutton_en_savoir_plus_light:hover {
-    color: #95fbf2;
-    background-color: #24262b;
+    background-color: #5abebd;
+    text-wrap: nowrap;
 }
 
 /*------------------configuration de la section nos services-----------------*/
@@ -181,92 +192,42 @@ main .container_h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 1.2em;
+    font-size: 19px;
 }
 
-.caseArticle_devis {
+.case {
     width: 20em;
     height: 20em;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url('resources/devis_sign.png') no-repeat;
     margin-left: 0.5em;
     margin-right: 0.5em;
     margin-bottom: 2em;
     padding: 2em;
     display: flex;
     flex-direction: column;
-    box-shadow: 1px 10px #e6e6e6;
     transition: 0.3s ease-in-out;
-    background-color: #eee;
     text-align: center;
     border-radius: 2em;
     color: white;
+}
+
+.caseArticle_devis {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url('resources/devis_sign.png');
 }
 
 
 .caseArticle_dep {
-    width: 20em;
-    height: 20em;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url('resources/camionnette.jpeg');
-    background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    margin-bottom: 2em;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 1px 10px #e6e6e6;
-    transition: 0.3s ease-in-out;
-    background-color: #eee;
-    text-align: center;
-    border-radius: 2em;
-
-    color: white;
 }
 
 .caseArticle_inter {
-    width: 20em;
-    height: 20em;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url('resources/mobile-repear.png');
-    background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    margin-bottom: 2em;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 1px 10px #e6e6e6;
-    transition: 0.3s ease-in-out;
-    text-align: center;
-    border-radius: 2em;
-
-    color: white;
 }
 
 .caseArticle_fin {
-    width: 20em;
-    height: 20em;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url('resources/animeMaterialoffice.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    margin-bottom: 2em;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 1px 10px #e6e6e6;
-    transition: 0.3s ease-in-out;
-    background-color: #eee;
-    text-align: center;
-    border-radius: 2em;
-
-    color: white;
-}
-
-.pro_titre {
-    margin: 40px;
 }
 
 /*--------------------------------CONTACT-----------------------------------------------*/
@@ -289,14 +250,18 @@ main .container_h2 {
 
     .info {
         margin: 3em 1em 3em;
+        a {
+            color: #5abebd;
+        }
     }
-}
-
-.map {
-    border: none;
-    width: 80%;
-    height: 80%;
-    margin: 10%;
+    .map {
+        border: 2px solid #ddd; /* Ajouter une bordure légère */
+        border-radius: 10px; /* Bordure arrondie */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée */
+        width: 80%;
+        height: 80%;
+        margin: 10%;
+    }
 }
 
 /*ajuste media pour tout les section d'informations */
@@ -326,6 +291,27 @@ main .container_h2 {
 
     .Procedure {
         height: auto;
+    }
+}
+
+
+@media (max-width: 914px) {
+    main h1 {
+        font-size: 47px;
+    }
+
+    main h4 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 600px) {
+    main h1 {
+        font-size: 32px;
+    }
+
+    main h4 {
+        font-size: 20px;
     }
 }
 

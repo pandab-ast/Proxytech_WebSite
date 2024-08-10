@@ -7,7 +7,7 @@
 }
 
 .navbar {
-    background-color: rgb(52, 51, 52, 0.7); /* Fond gris avec opacité */
+    background-color: rgb(28, 37, 64, 0.85); /* Fond gris avec opacité */
     height: 5em;
     color: #cacaca;
     display: flex;
@@ -16,6 +16,17 @@
     text-transform: uppercase;
     box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
 
+    a {
+        color: #cacaca;
+        text-decoration: none;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+    }
+
+    a:hover {
+        color: #fdfdfd;
+        text-shadow: 0 0 20px rgb(90, 190, 189, 1); /* Brilliance turquoise */
+    }
 
 }
 
@@ -33,18 +44,6 @@
     transition: all 0.3s ease;
 }
 
-.navbar a {
-    color: #cacaca;
-    text-decoration: none;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-}
-
-.navbar a:hover {
-    color: #fdfdfd;
-    text-shadow: 0 0 20px rgb(32, 251, 232, 1.0); /* Brilliance turquoise */
-}
-
 .menu_icon {
 
     display: none;
@@ -53,7 +52,7 @@
 .menu_icon_line {
     width: 1.3em;
     height: 3px;
-    background-color: #20fdea;
+    background-color: #5abebd;
     margin-bottom: 0.25em;
     box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px,
     rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
@@ -84,11 +83,11 @@
         text-align: center;
         padding-top: 10px;
         display: none;
-    }
 
-    .nav-list .list-item {
-        display: block;
-        border-top: 1px solid black;
+        .list-item {
+            display: block;
+            border-top: 1px solid black;
+        }
     }
 
     .logo {
