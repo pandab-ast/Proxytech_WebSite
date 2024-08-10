@@ -270,28 +270,33 @@ main .container_h2 {
 }
 
 /*--------------------------------CONTACT-----------------------------------------------*/
-.contact {
-    width: 100%;
-    display: block;
 
-    .info {
-        margin: 3em 1em 3em 50%;
-        width: auto;
-        align-items: center;
-        font-style: normal;
-    }
-}
-
-.grid_contact_map {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    grid-gap: 80px;
+.couleurdefond {
     background-color: #f6f6f6;
 }
 
-.patern_map {
-    margin: 3em auto 3em 1em;
+.grid_contact_map {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: auto;
+    justify-content: center;
+}
+
+.contact_col {
+    width: 50%;
+    font-style: normal;
+
+    .info {
+        margin: 3em 1em 3em;
+    }
+}
+
+.map {
+    border: none;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
 }
 
 /*ajuste media pour tout les section d'informations */
@@ -321,5 +326,13 @@ main .container_h2 {
 
     .Procedure {
         height: auto;
+    }
+}
+
+/*responsive contact + carte */
+@media (max-width: 767px) {
+    .contact_col {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }

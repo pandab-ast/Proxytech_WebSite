@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{% static  'resources/favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static  'resources/favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static  'resources/favicon/favicon-16x16.png' %}">
-    <link rel="manifest" href="{% static  'favicon/site.webmanifest' %}">
+    <link rel="manifest" href="{% static  'resources/favicon/site.webmanifest' %}">
 </head>
 <body>
 {% include 'header.html' %}
@@ -22,7 +22,7 @@
             <div class="container_h2">
                 <h2>Nous réparons ordinateurs portables, pc, smartphones, tablettes et console de jeux.<br>
                     Nous concevons et personalisons des pc sur mesure <br>
-                    nous somme aussi disponible pour des instalations et pour vos projet de digitalisation.
+                    nous somme aussi disponible pour des installations et pour vos projet de digitalisation.
                 </h2>
             </div>
         </div>
@@ -75,13 +75,13 @@
             <img alt="photo du réseau" height="100em" src="{% static 'resources/clean.png' %}" width="100em">
             <h2>Dépoussiérage et nettoyage d'appareil éléctronique</h2>
             <p>Éliminez les problèmes de surchauffe et faites durer vos appareils électroniques plus longtemps avec
-                notre nettoyage proféssionnel.</p>
+                notre nettoyage professionnel.</p>
         </article>
         <article class="art_service">
             <img alt="photo du réseau" height="100em" src="{% static 'resources/gamingPC.png' %}" width="100em">
             <h2>PC sur mesure</h2>
-            <p>Nous réalisons vos rêves en conceptionnant sur mesure vos tour, que se soit pour le gaming ou le
-                proféssionnel.</p>
+            <p>Nous réalisons vos rêves en conceptionnant sur mesure vos tours, que ce soit pour le gaming ou le
+                professionnel.</p>
         </article>
         <article class="art_service first_right">
             <img alt="photo du réseau" height="100em" src="{% static 'resources/windows.png' %}" width="100em">
@@ -109,7 +109,7 @@
             <div class="pro_titre">
                 <H2>Déplacement</H2>
             </div>
-            <p>Ne bouger pas le petit doigt ! Nous nous déplacons chez vous pour la réparation.</p>
+            <p>Ne bougez pas le petit doigt ! Nous nous déplaçons chez vous pour la réparation.</p>
         </div>
         <div class="caseArticle_inter">
             <div class="pro_titre">
@@ -119,43 +119,44 @@
         </div>
         <div class="caseArticle_fin">
             <div class="pro_titre">
-                <h2>Tout est bien qui fini bien !</h2>
+                <h2>Tout est bien qui finit bien !</h2>
             </div>
-            <p>Nous avons un services après vente et une garentie pour tout nos interventions.</p>
+            <p>Nous avons un services après vente et une garantie pour toutes nos interventions.</p>
         </div>
     </div>
     <div class="boutton_en_savoir_plus">
         <p>En savoir plus</p>
     </div>
 </section>
-<section class="contact">
+<section>
     <div class="reveal">
         <h1 class="titre_rep">Vous êtes interessé par nos service ?</h1>
         <div class="shape_title"></div>
     </div>
-    <div class="grid_contact_map">
-        <address class="contact">
-            <h2 class="info"><img alt="van_icon" height="30" src="{% static 'resources/van_icon.png' %}"
-                                  width="30">
-                Intervention gratuite sur un rayon de 10 km de Braine-Le-Comte</h2>
-            <h2 class="info"><img alt="clock_icon" height="30" src="{% static 'resources/clock_icon.png' %}"
-                                  width="30"> Horaire
-                d'intervention : Lundi-Samedi 16-21h</h2>
-            <h2 class="info"><img alt="phone_icon" height="30" src="{% static 'resources/phone_icon.png' %}"
-                                  width="30">
-                Appelez-nous au <a href="tel:+32474312579">0474/31.25.79</a></h2>
-            <h2 class="info"><img alt="mail_icon" height="30" src="{% static 'resources/mail_icon.png' %}"
-                                  width="30">
-                Contactez-nous sur <a
-                        href="mailto:proxytech.be@gmail.com?subject=Renseignement">proxytech.be@gmail.com</a></h2>
-        </address>
-        <div class="patern_map">
-            <iframe allowfullscreen=""
-                    height="600" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81009.63712905788!2d4.
+    <div class="couleurdefond">
+        <div class="grid_contact_map">
+            <address class="contact_col">
+                <h2 class="info"><img alt="van_icon" height="30" src="{% static 'resources/van_icon.png' %}"
+                                      width="30">
+                    Intervention gratuite sur un rayon de 10 km de Braine-Le-Comte</h2>
+                <h2 class="info"><img alt="clock_icon" height="30" src="{% static 'resources/clock_icon.png' %}"
+                                      width="30"> Horaire
+                    d'intervention : Lundi-Samedi 16-21h</h2>
+                <h2 class="info"><img alt="phone_icon" height="30" src="{% static 'resources/phone_icon.png' %}"
+                                      width="30">
+                    Appelez-nous au <a href="tel:+32474312579">0474/31.25.79</a></h2>
+                <h2 class="info"><img alt="mail_icon" height="30" src="{% static 'resources/mail_icon.png' %}"
+                                      width="30">
+                    Contactez-nous sur <a
+                            href="mailto:proxytech.be@gmail.com?subject=Renseignement">proxytech.be@gmail.com</a></h2>
+            </address>
+            <div class="contact_col">
+                <iframe class="map" allowfullscreen=""
+                        loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81009.63712905788!2d4.
             057702631224662!3d50.616877264641914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x
             47c3b2d66c747c85%3A0xd25f42320ddba71b!2s7090%20Braine-le-Comte!5e0!3m2!1sfr!2sbe!4v1710880286922!5m2!1sfr!2sbe"
-                    style="border:0;"
-                    width="700"></iframe>
+                ></iframe>
+            </div>
         </div>
     </div>
 </section>

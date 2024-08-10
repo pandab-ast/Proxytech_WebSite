@@ -22,13 +22,6 @@ ul {
     list-style: none;
 }
 
-.footer {
-    font-family: "Poppins", sans-serif;
-    background-color: #24262b;
-    padding: 70px 0;
-
-}
-
 .footer-col {
     width: 25%;
     padding: 0 15px;
@@ -113,27 +106,16 @@ ul {
     }
 }
 
-/* Ajout du style pour le body */
-body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #eee;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Ajout du style pour le main */
-main {
-    flex: 1;
-}
-
-/* Ajout du style pour le footer */
-.footer {
+footer {
     font-family: "Poppins", sans-serif;
     background-color: #24262b;
     padding: 70px 0;
     width: 100%;
     position: relative;
     bottom: 0;
+}
+
+/* permet d'avoir le footer tout en bas de la page */
+main {
+    flex: 1;
 }
