@@ -1,15 +1,29 @@
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #dce0e4;
 }
 
-/*-----------------------configuration css du header---------------------------*/
-.main_section {
-    background-size: cover;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('resources/main_background_2.png') no-repeat local top;
-    width: auto;
-    height: 42em;
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer verticalement le contenu */
+}
 
+.main_section {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('resources/main_background_2.1.png') no-repeat center center;
+    background-size: cover;
+    flex: 1; /* Permet à la section de prendre tout l'espace restant */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1; /* Mettre en dessous de la navbar */
+    padding-top: 10em;
+    text-align: center;
 }
 
 h1 {
@@ -142,6 +156,7 @@ hr {
 
 section a {
     text-decoration: none;
+
     button {
         transition: all 0.5s ease;
         margin-left: auto;
@@ -250,10 +265,12 @@ button:hover {
 
     .info {
         margin: 3em 1em 3em;
+
         a {
             color: #5abebd;
         }
     }
+
     .map {
         border: 2px solid #ddd; /* Ajouter une bordure légère */
         border-radius: 10px; /* Bordure arrondie */
@@ -266,14 +283,6 @@ button:hover {
 
 /*ajuste media pour tout les section d'informations */
 @media (max-width: 1630px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    .main_section {
-        background-position: right;
-    }
 
     .container_main {
         width: auto;
