@@ -43,27 +43,27 @@ body {
 
 .container_about {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     text-align: left;
     line-height: 1.8em;
     color: #333;
     font-size: 1.2em;
+    margin: auto;
 }
 
 .about_text {
-    flex: 2;
     padding-right: 2em;
+    flex: 1 1 70%;
 }
 
 .about_photo {
-    flex: 1;
     text-align: center;
+    flex: 1 1 30%;
 }
 
 .about_photo img {
     width: 100%;
-    max-width: 300px;
     border-radius: 1em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -94,7 +94,7 @@ body {
 
 .container_about h2 {
     text-align: center;
-    color: #20b2aa;
+    color: #59bdbc;
     font-size: 2.5em;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -109,7 +109,7 @@ body {
 }
 
 .container_about ul li {
-    background: #e7f5f2;
+    background: #e5f3f0;
     margin: 0.5em 0;
     padding: 1em;
     border-radius: 0.5em;
@@ -155,8 +155,18 @@ body {
         padding: 2em 1em;
     }
 
-    .about_text {
-        padding-right: 0;
+    .container_about {
+        flex-direction: column;
+    }
+
+    .about_text, .about_photo {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about_photo {
+        margin-top: 2em;
     }
 
     .container_about h2 {
@@ -165,10 +175,5 @@ body {
 
     .container_about ul li {
         padding: 0.8em;
-    }
-
-    .about_photo img {
-        width: 100%;
-        max-width: 200px;
     }
 }
